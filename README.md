@@ -63,7 +63,9 @@ Los commits nuevos siguen Conventional Commits con descripción en español, por
 
 ## Publicación y estado
 
-El sitio se publica con GitHub Pages desde la raíz de la rama estable `main`; no requiere compilación. La configuración se administra en el repositorio de GitHub. Los enlaces a demos dependen de proyectos externos; Superdeportivos BGA continúa identificado como demo en revisión.
+Sitio publicado: [Abrir el portafolio de Moises Giraldo](https://ellmoi.github.io/portafolio-ciberseguridad-MoisesGiraldo/).
+
+El portafolio es estático y no requiere compilación de producción. GitHub Pages publica la versión configurada en el repositorio; la actualización puede tardar unos minutos tras cada despliegue. Los enlaces a demos dependen de proyectos externos; Superdeportivos BGA continúa identificado como demo en revisión.
 
 ## Contacto
 
