@@ -24,7 +24,7 @@ async function loadProjectDetail() {
   document.querySelector('#project-detail-title').textContent = title;
   document.querySelector('#project-detail-description').textContent = description;
   document.querySelector('#project-detail-index').textContent = index;
-  document.title = `${title} | Moisés Giraldo`;
+  document.title = `${title} | Moises Giraldo`;
 
   const technologyList = document.querySelector('#project-detail-tech');
   project.querySelectorAll('.repository-tech li').forEach((technology) => {

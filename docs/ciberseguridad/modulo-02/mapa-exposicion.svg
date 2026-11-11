@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 570" role="img" aria-labelledby="title description">
+  <title id="title">Mapa de exposición: identidad, aplicaciones, agente de IA y datos</title>
+  <desc id="description">Diagrama defensivo de alto nivel que muestra los flujos autorizados entre una persona, su proveedor de identidad, las aplicaciones, un agente de IA y los datos, junto con controles preventivos.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0 8 4 0 8Z" fill="#96d8ca"/>
+    </marker>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; }
+      .eyebrow { fill: #96d8ca; font: 600 13px "Courier New", monospace; letter-spacing: 1.5px; }
+      .heading { fill: #edf3f7; font-size: 18px; font-weight: 700; }
+      .copy { fill: #b9c9d4; font-size: 13px; }
+      .micro { fill: #a9bac6; font-size: 11px; }
+      .node { fill: #192c3a; stroke: #516c7d; stroke-width: 1.5; }
+      .line { fill: none; stroke: #96d8ca; stroke-width: 2; marker-end: url(#arrow); }
+      .boundary { fill: none; stroke: #526a78; stroke-width: 1; stroke-dasharray: 5 6; }
+      .control { fill: #203d46; stroke: #4b817b; stroke-width: 1; }
+    </style>
+  </defs>
+  <rect width="1000" height="570" rx="18" fill="#101f30"/>
+  <text x="36" y="42" class="eyebrow">SUPERFICIE DE EXPOSICIÓN · VISTA DEFENSIVA</text>
+  <text x="36" y="71" class="copy">Flujos autorizados y puntos de control que deben revisarse</text>
+
+  <rect x="28" y="105" width="182" height="220" rx="12" class="boundary"/>
+  <text x="44" y="128" class="micro">IDENTIDAD</text>
+  <rect x="43" y="147" width="152" height="70" rx="9" class="node"/>
+  <text x="58" y="176" class="heading">Persona</text>
+  <text x="58" y="198" class="copy">Cuenta autorizada</text>
+  <rect x="43" y="235" width="152" height="70" rx="9" class="node"/>
+  <text x="58" y="264" class="heading">Proveedor de identidad</text>
+  <text x="58" y="286" class="copy">Autenticación y sesión</text>
+
+  <rect x="233" y="105" width="188" height="220" rx="12" class="boundary"/>
+  <text x="249" y="128" class="micro">APLICACIONES</text>
+  <rect x="249" y="172" width="156" height="92" rx="9" class="node"/>
+  <text x="265" y="204" class="heading">SaaS y servicios</text>
+  <text x="265" y="228" class="copy">Acceso según rol</text>
+  <text x="265" y="247" class="copy">y propósito aprobado</text>
+
+  <rect x="444" y="105" width="206" height="220" rx="12" class="boundary"/>
+  <text x="460" y="128" class="micro">AUTOMATIZACIÓN</text>
+  <rect x="461" y="172" width="172" height="92" rx="9" class="node"/>
+  <text x="477" y="204" class="heading">Agente de IA</text>
+  <text x="477" y="228" class="copy">Permisos acotados</text>
+  <text x="477" y="247" class="copy">y revisión humana</text>
+
+  <rect x="674" y="105" width="298" height="220" rx="12" class="boundary"/>
+  <text x="690" y="128" class="micro">DATOS Y SERVICIOS</text>
+  <rect x="691" y="172" width="264" height="92" rx="9" class="node"/>
+  <text x="707" y="204" class="heading">Datos y APIs autorizadas</text>
+  <text x="707" y="228" class="copy">Acceso limitado al mínimo necesario</text>
+  <text x="707" y="247" class="copy">con registros consultables</text>
+
+  <path d="M195 181h48M195 270h26v-52h28M405 218h56M633 218h58" class="line"/>
+  <path d="M118 325v36h763v-36" class="boundary"/>
+  <text x="398" y="352" class="micro">LÍMITES DE CONFIANZA · REVISAR EN CADA INTEGRACIÓN</text>
+
+  <text x="36" y="405" class="eyebrow">CONTROLES PREVENTIVOS</text>
+  <rect x="36" y="425" width="222" height="74" rx="9" class="control"/>
+  <text x="53" y="456" class="heading">Autenticación fuerte</text>
+  <text x="53" y="478" class="copy">Protección de identidad y sesión</text>
+  <rect x="276" y="425" width="222" height="74" rx="9" class="control"/>
+  <text x="293" y="456" class="heading">Mínimo privilegio</text>
+  <text x="293" y="478" class="copy">Roles y alcance acotados</text>
+  <rect x="516" y="425" width="222" height="74" rx="9" class="control"/>
+  <text x="533" y="456" class="heading">Aprobación humana</text>
+  <text x="533" y="478" class="copy">Para acciones sensibles</text>
+  <rect x="756" y="425" width="208" height="74" rx="9" class="control"/>
+  <text x="773" y="456" class="heading">Auditoría</text>
+  <text x="773" y="478" class="copy">Registros y respuesta</text>
+
+  <text x="36" y="540" class="micro">Diagrama conceptual: validar los límites y responsables en cada entorno autorizado.</text>
+</svg>
