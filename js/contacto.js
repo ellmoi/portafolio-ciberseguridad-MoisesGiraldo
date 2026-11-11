@@ -13,7 +13,7 @@ if (contactForm && contactFormStatus) {
     const message = String(formData.get('message')).trim();
     const subject = `${reason} - ${name}`;
     const body = [
-      'Hola, Moisés:',
+      'Hola, Moises:',
       '',
       `Nombre: ${name}`,
       `Correo: ${email}`,

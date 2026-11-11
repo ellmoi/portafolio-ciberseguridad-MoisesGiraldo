@@ -1,4 +1,4 @@
-# Moisés Giraldo · Ciberseguridad defensiva e Ingeniería de Software
+# Moises Giraldo · Ciberseguridad defensiva e Ingeniería de Software
 
 Sitio personal para presentar mi formación en ciberseguridad defensiva, el interés en agentes de IA para apoyar el análisis de alertas y registros, proyectos de ingeniería de software y canales de contacto.
 
@@ -6,7 +6,7 @@ Sitio personal para presentar mi formación en ciberseguridad defensiva, el inte
 
 - Inicio con enfoque en análisis defensivo proactivo, límites del servicio y formación en curso.
 - Sobre mí con ruta de aprendizaje en ciberseguridad, ingeniería de software y sistemas; paneles desplegables y navegación por teclado.
-- Galería de diez proyectos de software y fichas individuales con repositorios y demos cuando están configuradas. Los proyectos de ciberseguridad aparecerán cuando estén documentados.
+- Galería de diez proyectos de software y fichas individuales con repositorios y demos cuando están configuradas. Incluye un caso de estudio educativo de ciberseguridad defensiva con su análisis y evidencias.
 - Proceso propuesto para acordar alcance autorizado, revisar alertas y registros, priorizar hallazgos y comunicar observaciones.
 - Contacto con validación del formulario y preparación de un borrador mediante `mailto:`. El envío se realiza desde el cliente de correo del visitante; no hay backend.
 - Diseño adaptable, menú móvil y enlace para saltar al contenido.
@@ -24,8 +24,8 @@ Para desarrollo se necesita un navegador y Node.js para el servidor local y las 
 ## Ejecutar
 
 ```sh
-git clone https://github.com/ellmoi/portafolio-MoisesGiraldo-J2.git
-cd portafolio-MoisesGiraldo-J2
+git clone https://github.com/ellmoi/portafolio-ciberseguridad-MoisesGiraldo.git
+cd portafolio-ciberseguridad-MoisesGiraldo
 node scripts/serve.cjs
 ```
 
@@ -39,12 +39,15 @@ css/                   Estilos compartidos y por página
 js/                    Navegación, áreas técnicas, proyectos y contacto
 assets/                Imágenes del sitio y recursos visuales conservados
 docs/                  Material de referencia
+docs/ciberseguridad/   Casos de estudio defensivos organizados por módulo
 docs/design/           Procedencia y prompts de las ilustraciones
 scripts/serve.cjs      Servidor local sin dependencias
 .github/               Validación y plantilla de Pull Request
 ```
 
 `proyectos.html` es la fuente de datos de las fichas: los atributos `data-project`, `data-project-page` y `data-project-repository` definen sus enlaces. `tecnologias.html` conserva una redirección a Proyectos por compatibilidad.
+
+El caso de estudio del Módulo 02 aparece en `proyectos.html`; sus entregables viven en `docs/ciberseguridad/modulo-02/`. El material de origen se trata como escenario académico: las afirmaciones no se presentan como hechos confirmados sin fuentes verificables.
 
 ## Verificación
 

@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#111d31">
-    <meta name="description" content="Proyectos de ingeniería de software de Moisés Giraldo y próximos proyectos de ciberseguridad defensiva con IA.">
-    <title>Proyectos | Moisés Giraldo</title>
+    <meta name="description" content="Proyectos de ingeniería de software de Moises Giraldo y un caso de estudio de ciberseguridad defensiva con IA.">
+    <title>Proyectos | Moises Giraldo</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/app.js" defer></script>
     <link rel="stylesheet" href="css/visual.css">
+    <link rel="stylesheet" href="css/proyectos.css">
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <header class="site-header">
       <div class="header-inner">
-        <a class="wordmark" href="index.html" aria-label="Moisés Giraldo, ir al inicio">MG<span>.</span></a>
+        <a class="wordmark" href="index.html" aria-label="Moises Giraldo, ir al inicio">MG<span>.</span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><span></span><span></span></button>
         <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
           <a href="index.html">Inicio</a><a href="sobre-mi.html">Sobre mí</a>
@@ -28,15 +29,46 @@
       <section class="page-intro section-wrap" aria-labelledby="page-title">
         <p class="eyebrow">02 — Proyectos</p>
         <h1 class="page-title" id="page-title">Proyectos</h1>
-        <p class="page-description">Conservo aquí mis proyectos de ingeniería de software como parte de mi experiencia técnica. Estoy preparando proyectos propios de ciberseguridad defensiva y agentes de IA para documentarlos cuando estén listos.</p>
+        <p class="page-description">Reúno proyectos de ingeniería de software y un caso de estudio académico de ciberseguridad defensiva. En cada trabajo distingo el alcance, la evidencia disponible y los límites del análisis.</p>
       </section>
       <section class="cyber-project-note section-wrap" aria-labelledby="cyber-project-title">
         <div>
-          <p class="eyebrow">Ciberseguridad · En preparación</p>
-          <h2 id="cyber-project-title">Próximos análisis y proyectos defensivos</h2>
-          <p>Estoy trabajando en incorporar uno o dos proyectos de ciberseguridad. Aquí aparecerán con su alcance, metodología, resultados y límites claramente documentados; por ahora, no presento ejercicios pendientes como proyectos terminados.</p>
+          <p class="eyebrow">Estudio de caso · Módulo 02</p>
+          <h2 id="cyber-project-title">Amenazas de identidad e inteligencia artificial</h2>
+          <p>Un ejercicio de análisis defensivo que organiza el escenario, los puntos de exposición y las medidas preventivas, sin presentar las afirmaciones del material de estudio como incidentes confirmados.</p>
         </div>
-        <a class="button button-secondary" href="contacto.html">Consultar mi enfoque <span aria-hidden="true">→</span></a>
+        <a class="button button-secondary" href="#caso-identidad-ia">Explorar el análisis <span aria-hidden="true">↓</span></a>
+      </section>
+      <section class="security-case-study section-wrap" id="caso-identidad-ia" aria-labelledby="case-study-title">
+        <div class="security-case-study-heading">
+          <p class="eyebrow">Análisis defensivo · Threat landscape</p>
+          <h2 id="case-study-title">De la señal a una hipótesis verificable</h2>
+          <p>El estudio examina riesgos de identidad digital y permisos de agentes de IA. La documentación separa lo descrito en el material, lo que aún requiere validación y los controles propuestos.</p>
+        </div>
+        <div class="case-study-overview">
+          <div class="case-study-copy">
+            <p class="case-study-status"><span aria-hidden="true"></span> Ejercicio académico · No es un informe forense</p>
+            <p>La prioridad es reducir exposición y mejorar la capacidad de revisión: limitar accesos, proteger las sesiones, exigir aprobación humana para acciones sensibles y conservar registros auditables.</p>
+            <p class="case-study-limitation">Las fechas, atribuciones e impactos del material fuente no se publican como hechos: no se adjuntaron referencias primarias verificables ni telemetría del caso.</p>
+          </div>
+          <figure class="case-study-map">
+            <img src="docs/ciberseguridad/modulo-02/mapa-exposicion.svg" alt="Mapa de exposición entre identidad, aplicaciones, agente de IA y datos, con controles defensivos">
+            <ol class="case-study-flow" aria-label="Componentes y controles del mapa de exposición">
+              <li><strong>Identidad</strong><span>Cuenta, autenticación y sesión con protección adecuada.</span></li>
+              <li><strong>Aplicaciones</strong><span>Acceso según rol y propósito aprobado.</span></li>
+              <li><strong>Agente de IA</strong><span>Permisos acotados y revisión humana para acciones sensibles.</span></li>
+              <li><strong>Datos y servicios</strong><span>Acceso mínimo necesario, con registros consultables.</span></li>
+            </ol>
+            <figcaption>Mapa de exposición y controles preventivos propuestos.</figcaption>
+          </figure>
+        </div>
+        <ul class="case-study-deliverables" aria-label="Entregables del caso de estudio">
+          <li><a href="https://github.com/ellmoi/portafolio-ciberseguridad-MoisesGiraldo/blob/main/docs/ciberseguridad/modulo-02/incidente-analizado.md" target="_blank" rel="noopener noreferrer"><span class="deliverable-index">01 · ANÁLISIS</span><strong>Escenario analizado</strong><span>Alcance, hipótesis y límites</span></a></li>
+          <li><a href="https://github.com/ellmoi/portafolio-ciberseguridad-MoisesGiraldo/blob/main/docs/ciberseguridad/modulo-02/linea-tiempo.md" target="_blank" rel="noopener noreferrer"><span class="deliverable-index">02 · MÉTODO</span><strong>Línea de tiempo</strong><span>Fases de validación del ejercicio</span></a></li>
+          <li><a href="docs/ciberseguridad/modulo-02/mapa-exposicion.svg" target="_blank" rel="noopener noreferrer"><span class="deliverable-index">03 · DIAGRAMA</span><strong>Mapa de exposición</strong><span>Activos, límites de confianza y controles</span></a></li>
+          <li><a href="https://github.com/ellmoi/portafolio-ciberseguridad-MoisesGiraldo/blob/main/docs/ciberseguridad/modulo-02/brief-150-palabras.md" target="_blank" rel="noopener noreferrer"><span class="deliverable-index">04 · RESUMEN</span><strong>Brief ejecutivo</strong><span>Síntesis para comunicar prioridades</span></a></li>
+          <li><a href="https://github.com/ellmoi/portafolio-ciberseguridad-MoisesGiraldo/blob/main/docs/ciberseguridad/modulo-02/fortinet-semana-02.md" target="_blank" rel="noopener noreferrer"><span class="deliverable-index">05 · BITÁCORA</span><strong>Fortinet · Semana 02</strong><span>Aprendizajes, concepto y pregunta</span></a></li>
+        </ul>
       </section>
       <section class="repository-gallery section-wrap" id="proyectos" aria-label="Todos los proyectos">
         <div class="repository-gallery-heading"><p class="eyebrow">10 proyectos de ingeniería de software</p><p>En constante evolución.</p></div>
@@ -107,14 +139,14 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <div class="footer-top">
-          <div><a class="footer-name" href="index.html">Moisés Giraldo<span aria-hidden="true">.</span></a><p>Ciberseguridad defensiva con IA · Ingeniería de software</p></div>
+          <div><a class="footer-name" href="index.html">Moises Giraldo<span aria-hidden="true">.</span></a><p>Ciberseguridad defensiva con IA · Ingeniería de software</p></div>
           <nav class="footer-links" aria-label="Perfiles y contacto">
             <a href="https://github.com/ellmoi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
             <a href="https://www.linkedin.com/in/moises-giraldo-7874b9283" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
             <a href="mailto:moises10giraldo@gmail.com">Correo ↗</a>
           </nav>
         </div>
-        <div class="footer-bottom"><span class="footer-copy">© <span id="year">2026</span> Moisés Giraldo</span><a class="back-top" href="index.html" aria-label="Volver al inicio">↑</a></div>
+        <div class="footer-bottom"><span class="footer-copy">© <span id="year">2026</span> Moises Giraldo</span><a class="back-top" href="index.html" aria-label="Volver al inicio">↑</a></div>
       </div>
     </footer>
   </body>
