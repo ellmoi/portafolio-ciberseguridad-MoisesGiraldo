@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111d31">
+    <meta name="description" content="Presentación visual de un ejercicio académico defensivo sobre identidad digital, agentes de IA y controles preventivos.">
+    <title>Análisis de amenazas de identidad e IA | Moises Giraldo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="css/visual.css">
+    <link rel="stylesheet" href="css/analisis-amenazas.css">
+  </head>
+  <body class="analysis-page">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="index.html" aria-label="Moises Giraldo, ir al inicio">MG<span>.</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><span></span><span></span></button>
+        <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a><a href="sobre-mi.html">Sobre mí</a>
+          <a href="proyectos.html" aria-current="page">Proyectos</a>
+          <a href="como-trabajo.html">Cómo trabajo</a><a href="contacto.html">Contacto</a>
+        </nav>
+        <a class="header-cta" href="contacto.html">Hablemos <span aria-hidden="true">→</span></a>
+      </div>
+    </header>
+    <main id="contenido">
+      <section class="analysis-hero section-wrap" aria-labelledby="analysis-title">
+        <a class="analysis-back" href="proyectos.html#caso-identidad-ia"><span aria-hidden="true">←</span> Volver a proyectos</a>
+        <div class="analysis-hero-grid">
+          <div class="analysis-hero-copy">
+            <p class="eyebrow">Estudio de caso · Módulo 02</p>
+            <h1 id="analysis-title">Identidad digital <span>+</span> agentes de IA</h1>
+            <p class="analysis-lede">Un análisis defensivo que convierte un escenario de estudio en preguntas verificables, un mapa de exposición y controles preventivos claros.</p>
+            <p class="analysis-status"><span aria-hidden="true"></span> Ejercicio académico · No es un incidente confirmado</p>
+            <dl class="analysis-facts">
+              <div><dt>Enfoque</dt><dd>Identidad y acceso</dd></div>
+              <div><dt>Perspectiva</dt><dd>Prevención defensiva</dd></div>
+              <div><dt>Entregables</dt><dd>5 piezas de análisis</dd></div>
+            </dl>
+          </div>
+          <aside class="analysis-brief" aria-labelledby="brief-title">
+            <p class="analysis-card-label">Resumen ejecutivo · 150 palabras</p>
+            <h2 id="brief-title">La prioridad: reducir exposición y validar evidencia</h2>
+            <p>Este ejercicio analiza, desde una perspectiva defensiva, riesgos de identidad digital y permisos excesivos de agentes de inteligencia artificial sobre servicios y datos. El material plantea escenarios de acceso no autorizado y exposición de información, pero fechas y atribuciones siguen sin verificar: faltan fuentes primarias y telemetría. Por rigor, se separan hipótesis de hechos y no se presenta el escenario como incidente real. El mapa de exposición identifica puntos de confianza entre identidad, aplicaciones, agentes y datos, junto con controles de mínimo privilegio, autenticación resistente al phishing, gestión de sesiones, aprobación humana y registros de auditoría. La línea de tiempo documenta el proceso de análisis, no una cronología forense. El siguiente paso es validar cada afirmación con fuentes y evidencia autorizada antes de atribuir actores, impactos o fechas. El resultado es una guía académica de priorización preventiva, no asesoría de respuesta a incidentes ni una descripción de procedimientos de ataque.</p>
+          </aside>
+        </div>
+      </section>
+
+      <nav class="analysis-nav section-wrap" aria-label="Secciones de la presentación">
+        <a href="#alcance">Alcance</a>
+        <a href="#exposicion">Mapa de exposición</a>
+        <a href="#metodo">Método</a>
+        <a href="#controles">Controles</a>
+        <a href="#aprendizajes">Aprendizajes</a>
+        <a href="#documentos">Documentos</a>
+      </nav>
+
+      <section class="analysis-section section-wrap" id="alcance" aria-labelledby="scope-title">
+        <div class="analysis-section-heading">
+          <p class="eyebrow">01 · Alcance</p>
+          <h2 id="scope-title">Dos superficies relacionadas</h2>
+          <p>El ejercicio explora cómo una identidad y un agente automatizado pueden interactuar con aplicaciones y datos. Son áreas para revisar, no conclusiones sobre un evento real.</p>
+        </div>
+        <div class="analysis-theme-grid">
+          <article class="analysis-theme-card">
+            <span class="analysis-card-number">A / IDENTIDAD</span>
+            <h3>Cuentas, sesiones y permisos</h3>
+            <p>Revisar el ciclo de vida de las sesiones, los roles asignados y la actividad de acceso para comprobar que cada identidad conserve solo lo necesario.</p>
+            <span class="analysis-theme-tag">Autenticación · mínimo privilegio · auditoría</span>
+          </article>
+          <article class="analysis-theme-card">
+            <span class="analysis-card-number">B / AUTOMATIZACIÓN</span>
+            <h3>Agentes de IA y sus integraciones</h3>
+            <p>Delimitar qué datos y acciones requiere cada agente, quién autoriza su alcance y qué operaciones sensibles deben contar con aprobación humana.</p>
+            <span class="analysis-theme-tag">Alcance acotado · revisión humana · trazabilidad</span>
+          </article>
+        </div>
+        <aside class="analysis-evidence-note">
+          <span class="analysis-note-icon" aria-hidden="true">!</span>
+          <p><strong>Lectura responsable:</strong> las hipótesis sirven para orientar la validación. Fechas, atribuciones e impactos del material fuente no se consideran hechos sin referencias primarias y evidencia autorizada.</p>
+        </aside>
+      </section>
+
+      <section class="analysis-section section-wrap" id="exposicion" aria-labelledby="exposure-title">
+        <div class="analysis-section-heading">
+          <p class="eyebrow">02 · Superficie de exposición</p>
+          <h2 id="exposure-title">Sigue el flujo, revisa los límites de confianza</h2>
+          <p>El mapa representa relaciones conceptuales entre identidad, aplicaciones, agentes y datos. Cada integración debe revisarse con sus responsables en el entorno autorizado.</p>
+        </div>
+        <div class="analysis-map-layout">
+          <figure class="analysis-map-figure">
+            <img src="docs/ciberseguridad/modulo-02/mapa-exposicion.svg" alt="Diagrama conceptual: persona y proveedor de identidad conectan con aplicaciones, agente de IA y datos, con controles de autenticación, mínimo privilegio, aprobación humana y auditoría">
+            <ol class="analysis-map-mobile" aria-label="Flujo de exposición representado en el mapa">
+              <li><span>01</span><div><strong>Identidad</strong><p>Cuenta autorizada, autenticación y sesión.</p></div></li>
+              <li><span>02</span><div><strong>Aplicaciones</strong><p>Acceso según rol y propósito aprobado.</p></div></li>
+              <li><span>03</span><div><strong>Agente de IA</strong><p>Permisos acotados y revisión humana para acciones sensibles.</p></div></li>
+              <li><span>04</span><div><strong>Datos y servicios</strong><p>Acceso mínimo necesario, con registros consultables.</p></div></li>
+            </ol>
+            <figcaption>Diagrama conceptual del ejercicio · <a href="docs/ciberseguridad/modulo-02/mapa-exposicion.svg" target="_blank" rel="noopener noreferrer">Abrir el mapa SVG</a></figcaption>
+          </figure>
+          <aside class="analysis-map-aside">
+            <p class="analysis-card-label">Qué conviene comprobar</p>
+            <ul>
+              <li><strong>Quién accede</strong><span>Identidades, roles y sesiones activas.</span></li>
+              <li><strong>A qué accede</strong><span>Aplicaciones, datos y permisos concedidos.</span></li>
+              <li><strong>Qué puede automatizarse</strong><span>Acciones del agente y aprobaciones necesarias.</span></li>
+              <li><strong>Qué queda registrado</strong><span>Eventos de autenticación, cambios y accesos.</span></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="analysis-section section-wrap" id="metodo" aria-labelledby="method-title">
+        <div class="analysis-section-heading">
+          <p class="eyebrow">03 · Método</p>
+          <h2 id="method-title">Del material de estudio a una hipótesis verificable</h2>
+          <p>Esta secuencia describe el proceso de análisis; no es una cronología de un incidente.</p>
+        </div>
+        <ol class="analysis-timeline">
+          <li><span class="analysis-step">T0</span><div><h3>Recepción</h3><p>Revisar el material y delimitar el propósito defensivo.</p><span class="analysis-step-result">Alcance y límites definidos</span></div></li>
+          <li><span class="analysis-step">T1</span><div><h3>Clasificación</h3><p>Separar observaciones, afirmaciones e hipótesis por validar.</p><span class="analysis-step-result">Preguntas abiertas, sin atribución</span></div></li>
+          <li><span class="analysis-step">T2</span><div><h3>Validación</h3><p>Identificar fuentes primarias y registros necesarios para corroborar cada afirmación.</p><span class="analysis-step-result">Requisitos de evidencia documentados</span></div></li>
+          <li><span class="analysis-step">T3</span><div><h3>Exposición</h3><p>Representar identidades, aplicaciones, agentes, datos y controles.</p><span class="analysis-step-result">Mapa conceptual preparado</span></div></li>
+          <li><span class="analysis-step">T4</span><div><h3>Priorización</h3><p>Traducir las áreas de riesgo en controles preventivos y necesidades de monitoreo.</p><span class="analysis-step-result">Controles propuestos</span></div></li>
+          <li><span class="analysis-step">T5</span><div><h3>Comunicación</h3><p>Preparar un resumen ejecutivo y registrar aprendizajes y preguntas.</p><span class="analysis-step-result">Hallazgos y dudas presentados</span></div></li>
+        </ol>
+      </section>
+
+      <section class="analysis-section section-wrap" id="controles" aria-labelledby="controls-title">
+        <div class="analysis-section-heading">
+          <p class="eyebrow">04 · Prioridades defensivas</p>
+          <h2 id="controls-title">Controles para reducir exposición</h2>
+          <p>Medidas de alto nivel para adaptar y validar con el equipo responsable de cada entorno.</p>
+        </div>
+        <ol class="analysis-controls-grid">
+          <li><span>01</span><h3>Protege la identidad</h3><p>Usa autenticación resistente al phishing y políticas de sesión adecuadas al riesgo.</p></li>
+          <li><span>02</span><h3>Limita privilegios</h3><p>Asigna a cada identidad y agente solo los permisos indispensables; revísalos periódicamente.</p></li>
+          <li><span>03</span><h3>Acota los agentes</h3><p>Define las fuentes de datos y acciones autorizadas; pide aprobación humana para operaciones sensibles.</p></li>
+          <li><span>04</span><h3>Mantén trazabilidad</h3><p>Centraliza registros de autenticación, cambios de permisos y accesos a datos para su revisión autorizada.</p></li>
+          <li><span>05</span><h3>Define responsables</h3><p>Establece quién revisa señales y cuál es el canal acordado para investigar anomalías.</p></li>
+        </ol>
+      </section>
+
+      <section class="analysis-section section-wrap" id="aprendizajes" aria-labelledby="learning-title">
+        <div class="analysis-section-heading">
+          <p class="eyebrow">05 · Fortinet Training Institute · Semana 02</p>
+          <h2 id="learning-title">Aprendizajes y preguntas abiertas</h2>
+        </div>
+        <div class="analysis-learning-grid">
+          <article class="analysis-learning-card">
+            <p class="analysis-card-label">Concepto clave</p>
+            <h3>Superficie de ataque de identidad</h3>
+            <p>Comprende cuentas, proveedores de identidad, sesiones, aplicaciones conectadas y permisos. Al sumar un agente de IA, también deben revisarse sus integraciones y los datos a los que accede.</p>
+          </article>
+          <article class="analysis-learning-card">
+            <p class="analysis-card-label">Pregunta para investigar</p>
+            <h3>¿Qué evidencia permitiría corroborar un acceso?</h3>
+            <p>¿Qué fuentes primarias y registros autorizados permitirían reconstruir cuándo se detectó una afirmación sobre acceso a datos, quién la revisó y qué medidas se tomaron?</p>
+          </article>
+          <article class="analysis-learning-card">
+            <p class="analysis-card-label">Conexión proactiva</p>
+            <h3>Automatización con límites claros</h3>
+            <p>Documentar los datos que requiere el agente, quién aprueba su acceso y qué eventos deben registrarse. La IA puede ayudar a organizar señales; una persona valida hallazgos y acciones.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="analysis-section section-wrap" aria-labelledby="evidence-title">
+        <div class="analysis-evidence-panel">
+          <div>
+            <p class="eyebrow">Límites de la evidencia</p>
+            <h2 id="evidence-title">Lo que falta antes de afirmar que ocurrió</h2>
+          </div>
+          <div>
+            <p>El material de origen no incluye referencias primarias verificables para cada fecha, atribución o impacto, ni telemetría del entorno. Por eso, esta presentación no identifica víctimas, responsables ni indicadores como hechos.</p>
+            <p>Para evaluar un caso real, se necesitarían fuentes originales, evidencia obtenida con autorización, procedencia documentada y un nivel de confianza explícito. Este trabajo es académico; no es asesoría de respuesta a incidentes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="analysis-section section-wrap" id="documentos" aria-labelledby="documents-title">
+        <div class="analysis-section-heading">
+          <p class="eyebrow">06 · Material de respaldo</p>
+          <h2 id="documents-title">Documentos del ejercicio</h2>
+          <p>La presentación organiza los hallazgos; las piezas originales detallan el escenario, el método y la bitácora.</p>
+        </div>
+        <ul class="analysis-doc-list">
+          <li><a href="https://github.com/ellmoi/portafolio-ciberseguridad-MoisesGiraldo/blob/76baa688932c25b9ef9a8e9b6d358a311f7ad652/docs/ciberseguridad/modulo-02/incidente-analizado.md" target="_blank" rel="noopener noreferrer"><span>01 · ANÁLISIS</span><strong>Escenario analizado</strong><small>Alcance, hipótesis y límites</small><span class="analysis-doc-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/ellmoi/portafolio-ciberseguridad-MoisesGiraldo/blob/76baa688932c25b9ef9a8e9b6d358a311f7ad652/docs/ciberseguridad/modulo-02/linea-tiempo.md" target="_blank" rel="noopener noreferrer"><span>02 · MÉTODO</span><strong>Línea de tiempo del ejercicio</strong><small>Fases de validación, no cronología forense</small><span class="analysis-doc-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="docs/ciberseguridad/modulo-02/mapa-exposicion.svg" target="_blank" rel="noopener noreferrer"><span>03 · DIAGRAMA</span><strong>Mapa de exposición</strong><small>Activos, límites de confianza y controles</small><span class="analysis-doc-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/ellmoi/portafolio-ciberseguridad-MoisesGiraldo/blob/76baa688932c25b9ef9a8e9b6d358a311f7ad652/docs/ciberseguridad/modulo-02/brief-150-palabras.md" target="_blank" rel="noopener noreferrer"><span>04 · RESUMEN</span><strong>Brief ejecutivo</strong><small>Síntesis de 150 palabras</small><span class="analysis-doc-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/ellmoi/portafolio-ciberseguridad-MoisesGiraldo/blob/76baa688932c25b9ef9a8e9b6d358a311f7ad652/docs/ciberseguridad/modulo-02/fortinet-semana-02.md" target="_blank" rel="noopener noreferrer"><span>05 · BITÁCORA</span><strong>Fortinet · Semana 02</strong><small>Aprendizajes, concepto y pregunta</small><span class="analysis-doc-arrow" aria-hidden="true">↗</span></a></li>
+        </ul>
+        <a class="analysis-back-bottom" href="proyectos.html#caso-identidad-ia"><span aria-hidden="true">←</span> Volver a proyectos</a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div><a class="footer-name" href="index.html">Moises Giraldo<span aria-hidden="true">.</span></a><p>Ciberseguridad defensiva con IA · Ingeniería de software</p></div>
+          <nav class="footer-links" aria-label="Perfiles y contacto">
+            <a href="https://github.com/ellmoi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/moises-giraldo-7874b9283" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="mailto:moises10giraldo@gmail.com">Correo ↗</a>
+          </nav>
+        </div>
+        <div class="footer-bottom"><span class="footer-copy">© <span id="year">2026</span> Moises Giraldo</span><a class="back-top" href="#contenido" aria-label="Volver al inicio de la página">↑</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
