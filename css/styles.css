@@ -201,21 +201,6 @@ a.contact-row:hover { background: #e2e7df; }
 .site-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 0.4rem; }
 
 /* Portadas panorámicas de todos los repositorios. */
-.cyber-project-note {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-  padding: clamp(1.25rem, 3vw, 2rem);
-  border: 1px solid rgb(121 184 255 / 24%);
-  border-radius: 0.6rem;
-  background: rgb(28 45 70 / 70%);
-}
-.cyber-project-note .eyebrow { margin-bottom: 0.55rem; color: var(--accent); }
-.cyber-project-note h2 { margin-bottom: 0.6rem; font-size: clamp(1.2rem, 2.4vw, 1.7rem); }
-.cyber-project-note p:not(.eyebrow) { max-width: 46rem; margin-bottom: 0; color: var(--muted); font-size: 0.85rem; line-height: 1.75; }
-.cyber-project-note .button { flex: 0 0 auto; }
 .repository-gallery { margin-bottom: clamp(3rem, 7vw, 6rem); }
 .repository-gallery-heading { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem 2rem; padding-block: 1rem; border-top: 1px solid var(--line); }
 .repository-gallery-heading p { margin: 0; color: var(--muted); font-size: 0.75rem; line-height: 1.7; }
@@ -411,8 +396,4 @@ a.contact-row:hover { background: #273a59; }
 @media (max-width: 420px) {
   .contact-channels .contact-list { grid-template-columns: minmax(0, 1fr); }
   .contact-channels .contact-row { min-height: 3.2rem; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) auto; }
-}
-@media (max-width: 680px) {
-  .cyber-project-note { align-items: start; flex-direction: column; }
-  .cyber-project-note .button { width: fit-content; }
 }
