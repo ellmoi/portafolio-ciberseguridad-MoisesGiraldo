@@ -47,7 +47,7 @@ scripts/serve.cjs      Servidor local sin dependencias
 
 `proyectos.html` es la fuente de datos de las fichas: los atributos `data-project`, `data-project-page` y `data-project-repository` definen sus enlaces. `tecnologias.html` conserva una redirección a Proyectos por compatibilidad.
 
-El caso de estudio del Módulo 02 aparece en `proyectos.html`; sus entregables viven en `docs/ciberseguridad/modulo-02/`. El material de origen se trata como escenario académico: las afirmaciones no se presentan como hechos confirmados sin fuentes verificables.
+El caso de estudio del Módulo 02 se presenta visualmente en `analisis-amenazas.html`, enlazado desde `proyectos.html`; sus entregables de respaldo viven en `docs/ciberseguridad/modulo-02/`. El material de origen se trata como escenario académico: las afirmaciones no se presentan como hechos confirmados sin fuentes verificables.
 
 ## Verificación
 
